@@ -1,0 +1,21 @@
+.header-content{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.header-list{
+    list-style-type: none;
+    font-size: 22px;
+    color: #2E294E;
+    font-weight: 500;
+}
+
+.header-content h1{
+    color: #2E294E;
+    font-size: 30px;
+    flex: 1;
+}

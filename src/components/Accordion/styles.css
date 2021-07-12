@@ -1,0 +1,242 @@
+.accordion {
+    width: 100%;
+    max-width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+  }
+  
+  .accordion ul {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .accordion ul li {
+    display: table-cell;
+    vertical-align: bottom;
+    position: relative;
+    width: 20%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 500ms ease;
+  }
+  
+  .accordion ul li div {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    color: #fff;
+  }
+
+
+  .accordion-trail-title{
+      position: absolute;
+    display: flex !important;
+    flex-direction: column !important; 
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+
+  .accordion-trail-title span{
+    color: #fff;
+    font-size: 28px;
+    writing-mode: vertical-lr;
+}
+
+
+.accordion-trail-title img{
+    margin-bottom: 320px;
+    width: 50px;
+    height: 50px;
+}
+
+  /* .accordion ul li div span {
+    position: absolute;
+    color: #fff;
+    font-size: 28px;
+    writing-mode: vertical-lr;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.accordion ul li div img {
+    position: absolute;
+    color: #fff;
+}
+  .accordion ul li div a {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    vertical-align: bottom;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    transition: all 200ms ease;
+    cursor:auto;
+  }
+  
+  .accordion ul li div a * {
+    opacity: 0;
+    margin: 0;
+    width: 100%;
+    text-overflow: ellipsis;
+    position: relative;
+    z-index: 5;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+    
+  }
+  
+  .accordion-content{
+    height: 100% !important;
+    margin-top: auto;
+    display: flex !important;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .accordion-content h2{
+    width: 300px !important;
+    white-space:normal !important;
+    padding-bottom: 20px;
+  }
+
+  .accordion-content p{
+    width: 300px !important;
+    white-space:normal !important;
+    padding-bottom: 20px;
+    font-weight: 300;
+
+  }
+
+  .accordion-content button{
+    width: 150px !important;
+    white-space:normal !important;
+    height: 40px;
+    cursor: pointer !important;
+    margin-left: -150px !important;
+    border: none;
+    border-radius: 8px;
+    background-color: #2E294E;
+    color: #fff;
+    font-size: 15px;
+  }
+
+  .accordion-content img{
+        height: 100px !important;
+        width: 100px !important;
+        margin-bottom: 30px !important;
+  }
+
+  .accordion-content button:hover{
+    transform: scale(1.1) !important;
+    opacity:0.7;
+    transition: 0.5s;
+  }
+
+  /* .accordion ul li div a h2 {
+    text-overflow: clip;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    top: 160px;
+  }
+  
+  .accordion ul li div a p {
+    top: 160px;
+    font-size: 13.5px;
+  }
+
+  .accordion ul li div a button {
+    top: 180px;
+    font-size: 13.5px;
+  } */
+
+.accordion ul li:nth-child(1) { 
+    background: rgb(1,22,56);
+    background: linear-gradient(180deg, rgba(1,22,56,1) 0%, rgba(177,133,167,1) 100%); 
+}
+
+.accordion ul li:nth-child(2) { 
+    background: rgb(1,22,56);
+    background: linear-gradient(180deg, rgba(1,22,56,1) 0%, rgba(195,162,158,1) 100%);
+ }
+
+.accordion ul li:nth-child(3) { 
+    background: rgb(1,22,56);
+    background: linear-gradient(180deg, rgba(1,22,56,1) 0%, rgba(141,107,148,1) 100%);
+  }
+
+.accordion ul li:nth-child(4) { 
+    background: rgb(1,22,56);
+    background: linear-gradient(180deg, rgba(1,22,56,1) 0%, rgba(232,193,197,1) 100%);
+ }
+
+.accordion ul li:nth-child(5) { 
+    background: rgb(1,22,56);
+    background: linear-gradient(180deg, rgba(1,22,56,1) 0%, rgba(144,85,162,1) 100%);  }
+
+.accordion ul:hover li { width: 8%; }
+
+.accordion ul:hover li:hover { width: 60%; }
+
+.accordion ul:hover li:nth-child(1):hover a { background: #B185A7  }
+.accordion ul:hover li:nth-child(2):hover a { background: #C3A29E  }
+.accordion ul:hover li:nth-child(3):hover a { background: #8D6B94  }
+.accordion ul:hover li:nth-child(4):hover a { background: #CCAAAE  }
+.accordion ul:hover li:nth-child(5):hover a { background: #9055A2  }
+
+
+.accordion ul:hover li:hover a * {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 600px) {
+
+    .accordion { height: auto; max-width: 100%; }
+    
+    .accordion ul li,
+    .accordion ul li:hover,
+    .accordion ul:hover li,
+    .accordion ul:hover li:hover {
+      position: relative;
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+      -webkit-transition: none;
+      transition: none;
+    }
+
+    .accordion ul li div span {
+        writing-mode:horizontal-tb;
+    }
+
+    .accordion-trail-title img{
+        margin-bottom: 200px;
+        width: 100px;
+        height: 100px;
+    }
+    
+    }
