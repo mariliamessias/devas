@@ -1,4 +1,3 @@
-
 export const Data = [
     {
         title: "Uhull!",
@@ -16,8 +15,7 @@ export const Data = [
         ],
         links: [
            
-        ],
-        image: "../../assets/rocket.svg"
+        ]
 
     },
     {

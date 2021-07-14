@@ -12,8 +12,6 @@
     color: #fff;
     padding: 50px;
   }
-  
-
 
 .vertical-timeline-element-title{
     padding-bottom: 20px;
@@ -57,7 +55,7 @@ background-color: #707070 !important;
   }
   
   .vertical-timeline-element-image{
-    height: 150px;
+    height: 130px;
     transform: rotate(20deg);
   }
 

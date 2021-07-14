@@ -3,7 +3,6 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 
-import FundamentalIcon from "../../assets/rocket.svg";
 import TelegramIcon from '../../assets/telegram-icon.svg'; 
 import FacebookIcon from '../../assets/facebook-icon.svg'; 
 import InstagramIcon from '../../assets/instagram-icon.svg'; 
@@ -32,6 +31,7 @@ type TrailData = {
 
 type TrailProps = {
   data: TrailData[];
+  icon: string;
 };
 
 export function Trail(props: TrailProps) {
@@ -69,7 +69,7 @@ export function Trail(props: TrailProps) {
               {showIcon ? (
                 <img
                   className="vertical-timeline-element-image"
-                  src={FundamentalIcon}
+                  src={props.icon}
                 />
               ) : null}
               <div>

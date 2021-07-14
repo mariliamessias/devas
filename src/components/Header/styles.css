@@ -18,6 +18,7 @@
     color: #2E294E;
     font-size: 30px;
     flex: 1;
+    cursor: pointer;
 }
 
 .testSelect{

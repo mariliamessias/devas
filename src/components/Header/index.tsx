@@ -6,29 +6,36 @@ import Dropdown, { Option } from 'react-dropdown';
 import "react-dropdown/style.css";
 import "./styles.css";
 
-export function Header() {
+type HeaderProps ={
+    showDropDown: Boolean;
+    indexOption?: number
+}
+
+export function Header({ showDropDown, indexOption = 0,  ...props }: HeaderProps) {
     const options = [
         { value: 'trail-fundamentals', label: "Trilha Fundamentos" }, 
-        { value: '', label: "Trilha FrontEnd"}, 
-        { value: '', label: "Trilha BackEnd"}
-      ];
-      const history = useHistory();
-      const defaultOption = options[0];
+        { value: 'trail-frontend', label: "Trilha FrontEnd"}, 
+        // { value: 'bootcamps', label: "Bootcamps e mais"}
+    ];
 
-      function handleOnSelect(e : Option) {
-        console.log(e.value);
+    const history = useHistory();
+    const defaultOption = options[indexOption];
 
+    function handleOnSelect(e : Option) {
         history.push(`/${e.value}`)
+    }
 
-      }
-
-      
+    function handleOnClick() {
+        history.push(`/`)
+    }
 
   return (
     <div className="header-content">
-      <h1>Devas|</h1>
-
-      <Dropdown onChange={handleOnSelect} options={options} value={defaultOption} />
+      <h1 onClick={handleOnClick}>Devas|</h1>
+        {
+            showDropDown ? <Dropdown onChange={handleOnSelect} options={options} value={defaultOption} /> : null 
+        }
+      
      
       {/* <ul className="header-list">
         <li>Trilha Fundamentos</li>

@@ -3,16 +3,15 @@ import { Header } from '../../components/Header'
 import {Data} from './Data.js';
 import './styles.css'
 import { Trail } from '../../components/Trail';
+import BackendIcon from "../../assets/database.svg";
 
-import FundamentalIcon from "../../assets/rocket.svg";
-
-export function FundamentalsTrail(){
+export function BackendTrail(){
     return(
         <div className="content-fundamentals-trail">
-            <Header showDropDown indexOption={0}/>
+            <Header showDropDown indexOption={2}/>
             <Trail
+                icon={BackendIcon}
                 data={Data}
-                icon={FundamentalIcon}
             />
         </div>
     )

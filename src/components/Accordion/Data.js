@@ -49,7 +49,7 @@ export const Data = [
                 text: "Curso de Angular."
             },
         ],
-        buttonLinkRedirect: "trail-front",
+        buttonLinkRedirect: "trail-frontend",
         image: FrontPageIcon,
         textButton: "Conhecer trilha",
         showButton: true
@@ -92,7 +92,7 @@ export const Data = [
         seccondParagraph: "Separamos bootcamps que permitirão que você realize uma imersão na tecnologia. Sabemos que temos Devas em todo o Brasil, e por isso, selecionamos também conteúdos Online, para acessar de onde estiver.",
         itemList: [
         ],
-        buttonLinkRedirect: "trail-bootcamps",
+        buttonLinkRedirect: "bootcamps",
         image: BootcampIcon,
         textButton: "Conhecer Bootcamps",
         showButton: true

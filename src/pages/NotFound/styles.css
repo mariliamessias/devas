@@ -1,0 +1,40 @@
+.not-found-content{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: repeating-linear-gradient(
+        135deg,
+        #F5F1ED,
+        #F5F1ED 50px,
+        #ece8e4 50px,
+        #ece8e4 60px
+        );
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        color: #fff;
+        
+}
+
+.not-found-container h1{
+    margin: 0;
+    color: #162346;
+    width: 400px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.not-found-container img{
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+.not-found-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
