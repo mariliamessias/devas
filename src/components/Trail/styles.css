@@ -1,11 +1,20 @@
 .trail-container {
-    background: #F5F1ED;
+    /* background: #F5F1ED; */
+    background: repeating-linear-gradient(
+    135deg,
+    #F5F1ED,
+    #F5F1ED 50px,
+    #ece8e4 50px,
+    #ece8e4 60px
+    );
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     color: #fff;
     padding: 50px;
   }
   
+
+
 .vertical-timeline-element-title{
     padding-bottom: 20px;
     font-size: 25px;

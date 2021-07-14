@@ -19,3 +19,41 @@
     font-size: 30px;
     flex: 1;
 }
+
+.testSelect{
+    border: 0;
+    box-shadow: 'none';
+}
+
+.Dropdown-root{
+    font-size: 22px;
+    color: #2E294E;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.Dropdown-control{
+    border: none;
+    cursor: pointer;
+}
+
+.Dropdown-arrow{
+    display: none;
+}
+
+.Dropdown-option.is-selected{
+    background-color: #ece8e4;
+}
+.Dropdown-menu{
+    background-color: #F5F1ED;
+    border: 0;
+}
+
+.Dropdown-option{
+    font-size: 18px;
+    color: #2E294E !important;
+}
+
+.Dropdown-option:hover{
+    background-color: #C3A29E;
+}
