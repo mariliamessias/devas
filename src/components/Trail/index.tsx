@@ -32,6 +32,7 @@ type TrailData = {
 type TrailProps = {
   data: TrailData[];
   icon: string;
+  rotate?: string;
 };
 
 export function Trail(props: TrailProps) {
@@ -47,8 +48,7 @@ export function Trail(props: TrailProps) {
             element.buttonText != null &&
             element.buttonText != "";
 
-          let showIcon =
-            element.type == "first" ||  element.type == "end";
+          let showIcon = element.type == "first" ||  element.type == "end";
 
           let hasTags = element.tags.length > 0;
 
@@ -59,16 +59,16 @@ export function Trail(props: TrailProps) {
               dateClassName="date"
               iconStyle={showIcon ? dotFirstIconStyles : dotIconStyles}
               contentStyle={{
-                background: "#B185A7",
+                background: showIcon ?  "#B185A7" : "#9055A2" ,
                 display: "flex",
                 flexDirection: "column",
               }}
-              contentArrowStyle={{ borderRight: "7px solid #B185A7" }}
+              contentArrowStyle={{ borderRight: showIcon ? "7px solid #B185A7 " : "7px solid #9055A2 "   }}
               //   icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
             >
               {showIcon ? (
                 <img
-                  className="vertical-timeline-element-image"
+                  className={`vertical-timeline-element-image ${props.rotate}`}
                   src={props.icon}
                 />
               ) : null}

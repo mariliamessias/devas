@@ -31,11 +31,13 @@
     color: #2E294E;
     font-weight: 500;
     cursor: pointer;
+    text-align: end;
 }
 
 .Dropdown-control{
     border: none;
     cursor: pointer;
+    text-align: end;
 }
 
 .Dropdown-arrow{

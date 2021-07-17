@@ -55,8 +55,14 @@ background-color: #707070 !important;
   }
   
   .vertical-timeline-element-image{
-    height: 130px;
+    height: 120px;
+    padding-bottom: 20px;
+  }
+
+  .vertical-timeline-element-image.rotate{
     transform: rotate(20deg);
+    height: 130px;
+
   }
 
   .vertical-timeline-element-tags{
@@ -159,6 +165,7 @@ background-color: #707070 !important;
   @media only screen and (max-width: 800px) {
     .vertical-timeline-element-tags{
         flex-direction: column;
+        flex-flow: wrap;
     }
     }
 

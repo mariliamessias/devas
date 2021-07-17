@@ -5,6 +5,7 @@ import './styles.css'
 import { Trail } from '../../components/Trail';
 
 import FundamentalIcon from "../../assets/rocket.svg";
+import { Footer } from '../../components/Footer';
 
 export function FundamentalsTrail(){
     return(
@@ -13,7 +14,9 @@ export function FundamentalsTrail(){
             <Trail
                 data={Data}
                 icon={FundamentalIcon}
+                rotate="rotate"
             />
+            <Footer/>
         </div>
     )
 }

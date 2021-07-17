@@ -4,6 +4,7 @@ import Typical from "react-typical";
 import "./styles.css";
 import NotFoundImage from "../../assets/not-found.svg";
 import { Header } from "../../components/Header";
+import { Footer } from "../../components/Footer";
 
 export function NotFound() {
   return (
@@ -25,6 +26,7 @@ export function NotFound() {
           wrapper="h1"
         />
       </div>
+      <Footer/>
     </div>
   );
 }
