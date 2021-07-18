@@ -91,8 +91,13 @@ export function Trail(props: TrailProps) {
                {
                    element.type == "end" ?  
                     <div className="vertical-timeline-element-social-icons">
+                    <a href="https://t.me/d3vas/" target={"_blank"}>
                     <img src={ TelegramIcon }/>
-                    <img src={ InstagramIcon }/>
+                    </a>
+                    <a href="https://www.instagram.com/devas.tecnologia/" target={"_blank"}>
+                   <img src={ InstagramIcon }/>
+
+                   </a>
                     </div>
                    : 
             

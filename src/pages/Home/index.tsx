@@ -35,8 +35,12 @@ export function Home() {
               Nela você irá encontrar referências de conteúdos que auxiliarão nos seus estudos (links de cursos/artigos/documentações).
             </h3>
             <div className="section-home-social">
-              <img src={TelegramIcon} />
+          <a href="https://t.me/d3vas/" target={"_blank"}>
+          <img src={TelegramIcon} />
+              </a>
+              <a href="https://www.instagram.com/devas.tecnologia/" target={"_blank"}>
               <img src={InstagramIcon} />
+              </a>
             </div>
           </div>
         </section>
