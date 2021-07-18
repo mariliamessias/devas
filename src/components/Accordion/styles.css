@@ -213,6 +213,25 @@
   transform: translateX(0);
 }
 
+@media screen and (max-width: 1024px) {
+
+  .accordion-content strong{
+    font-size: 15px !important;
+    
+  }
+  .accordion-content p{
+    width: 100% !important;
+  }
+
+  .accordion-content h2{
+    width: 100% !important;
+  }
+
+  .accordion-content button{
+    margin-left: 0px !important;
+  }
+}
+
 @media screen and (max-width: 600px) {
 
     .accordion { height: auto; max-width: 100%; }
@@ -238,5 +257,17 @@
         width: 100px;
         height: 100px;
     }
+
+    .accordion-content p{
+      width: 300px !important;
+    }
     
+    .accordion-content h2{
+      width: 300px !important;
+    }
+  
+    .accordion-content button{
+      margin-left: -150px !important;
+    }
+
     }

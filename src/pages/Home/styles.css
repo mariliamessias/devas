@@ -57,6 +57,24 @@
 
 }
 
+@media screen and (max-width: 1024px) {
+  .section-home{
+    margin-left: 40px;
+  }
+
+  .section-home-content{
+    width: 90%;
+    flex: 6;
+  }
+
+  .section-home div h2 {
+    font-size: 25px;
+  }
+  .section-home div h3 {
+    font-size: 18px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .container-home{
     flex-direction: column;
