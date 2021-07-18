@@ -136,34 +136,34 @@ export const Data = [
         ]
 
     },
-    {
-        title: "#Exercícios e mais",
-        icon: "",
-        key: 3,
-        date: "",
-        description: "Existem exercícios que você pode fazer para praticar sua lógica, bora conhecer?",
-        subtitle: "",
-        buttonText: "",
-        tags: [
-            "artigo",
-            "online"
-        ],
-        links: [
-            {
-                description: "Algorithms - HACKERHANK",
-                link: "https://www.hackerrank.com/domains/algorithms"
-            },
-            {
-                description: "IDE do Portugol em seu navegador - Portugol WebStudio",
-                link: "https://portugol-webstudio.cubos.io/"
-            },
-            {
-                description: "Bora conhecer nosso repositório de exercícios?",
-                link: "https://github.com/d3vas/exs-logic-and-algorithms"
-            },
-        ]
+    // {
+    //     title: "#Exercícios e mais",
+    //     icon: "",
+    //     key: 3,
+    //     date: "",
+    //     description: "Existem exercícios que você pode fazer para praticar sua lógica, bora conhecer?",
+    //     subtitle: "",
+    //     buttonText: "",
+    //     tags: [
+    //         "artigo",
+    //         "online"
+    //     ],
+    //     links: [
+    //         {
+    //             description: "Algorithms - HACKERHANK",
+    //             link: "https://www.hackerrank.com/domains/algorithms"
+    //         },
+    //         {
+    //             description: "IDE do Portugol em seu navegador - Portugol WebStudio",
+    //             link: "https://portugol-webstudio.cubos.io/"
+    //         },
+    //         {
+    //             description: "Bora conhecer nosso repositório de exercícios?",
+    //             link: "https://github.com/d3vas/exs-logic-and-algorithms"
+    //         },
+    //     ]
 
-    },
+    // },
     {
         title: "Parabéns!",
         icon: "",

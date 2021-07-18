@@ -3,7 +3,6 @@ import React from "react";
 import Typical from "react-typical";
 
 import { Accordion } from "../../components/Accordion";
-import FacebookIcon from "../../assets/facebook-icon.svg";
 import TelegramIcon from "../../assets/telegram-icon.svg";
 import InstagramIcon from "../../assets/instagram-icon.svg";
 
@@ -37,7 +36,6 @@ export function Home() {
             </h3>
             <div className="section-home-social">
               <img src={TelegramIcon} />
-              <img src={FacebookIcon} />
               <img src={InstagramIcon} />
             </div>
           </div>

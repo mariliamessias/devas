@@ -4,7 +4,6 @@ import {
 } from "react-vertical-timeline-component";
 
 import TelegramIcon from '../../assets/telegram-icon.svg'; 
-import FacebookIcon from '../../assets/facebook-icon.svg'; 
 import InstagramIcon from '../../assets/instagram-icon.svg'; 
 
 import "react-vertical-timeline-component/style.min.css";
@@ -93,7 +92,6 @@ export function Trail(props: TrailProps) {
                    element.type == "end" ?  
                     <div className="vertical-timeline-element-social-icons">
                     <img src={ TelegramIcon }/>
-                    <img src={ FacebookIcon }/>
                     <img src={ InstagramIcon }/>
                     </div>
                    : 
@@ -102,7 +100,7 @@ export function Trail(props: TrailProps) {
                 return (
                   <a
                     className="vertical-timeline-element-links"
-                    href={link.link}
+                    href={link.link} target={"_blank"}
                   >
                     {link.description}
                   </a>
