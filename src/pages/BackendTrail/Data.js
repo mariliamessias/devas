@@ -125,11 +125,11 @@ export const Data = [
         links: [
             {
                 description: "Git e Github para iniciantes - UDEMY",
-                link: "https://www.ev.org.br/cursos/fundamentos-de-logica-de-programacao"
+                link: "https://www.udemy.com/course/git-e-github-para-iniciantes/"
             },
             {
                 description: "Curso de Git e Github: grátis, prático e sem usar comandos no terminal - CURSO EM VÍDEO | YOUTUBE",
-                link: "http://www.eadsenai.com.br/virtual/ms/login/index.php"
+                link: "https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA"
             }
         ]
 
